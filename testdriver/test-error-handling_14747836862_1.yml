@@ -1,0 +1,27 @@
+version: 4.2.29
+session: 6811c105e03948ec2ab505b7
+steps:
+  - prompt: Attempt to log in with incorrect credentials.
+    commands:
+      - command: hover-text
+        text: Sign In
+        description: sign in link at the top right of the header
+        action: click
+      - command: wait
+        timeout: 2000
+      - command: hover-text
+        text: Username
+        description: username input field label
+        action: click
+      - command: type
+        text: wronguser
+      - command: hover-text
+        text: Password
+        description: password input field label
+        action: click
+      - command: type
+        text: wrongpass
+      - command: hover-text
+        text: Login
+        description: login button below the password field
+        action: click
