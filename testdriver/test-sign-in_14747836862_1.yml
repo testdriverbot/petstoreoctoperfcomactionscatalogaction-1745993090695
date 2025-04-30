@@ -1,0 +1,9 @@
+version: 4.2.29
+session: 6811c105e03948ec2ab505b9
+steps:
+  - prompt: Click on "Sign In" at the top right.
+    commands:
+      - command: hover-text
+        text: Sign In
+        description: sign in link at the top right of the webpage
+        action: click
