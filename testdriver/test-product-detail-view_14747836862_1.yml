@@ -1,0 +1,15 @@
+version: 4.2.29
+session: 6811c11161c61c7cb66f5c6f
+steps:
+  - prompt: Click on a product in the "Cats" category.
+    commands:
+      - command: hover-text
+        text: Cats
+        description: category link for Cats on the left sidebar
+        action: click
+  - prompt: Click on a product in the "Cats" category.
+    commands:
+      - command: hover-text
+        text: Manx
+        description: product link for Manx in the Cats category
+        action: click
