@@ -1,0 +1,23 @@
+version: 4.2.29
+session: 6811c10c61c61c7cb66f5c69
+steps:
+  - prompt: Click on the "Fish" category link.
+    commands:
+      - command: hover-text
+        text: Fish
+        description: Fish category link on the left side of the webpage
+        action: click
+  - prompt: Assert that the user is taken to the Fish category page.
+    commands:
+      - command: assert
+        expect: the page displays the heading "Fish"
+  - prompt: Click on the "Dogs" category link.
+    commands:
+      - command: hover-text
+        text: Dogs
+        description: Dogs category link in the navigation bar
+        action: click
+  - prompt: Assert that the user is taken to the Dogs category page.
+    commands:
+      - command: assert
+        expect: the page displays the heading "Dogs"
