@@ -1,0 +1,13 @@
+version: 4.2.29
+session: 6811c10561c61c7cb66f5c60
+steps:
+  - prompt: Navigate to the sign-up page.
+    commands:
+      - command: hover-text
+        text: Sign In
+        description: sign in link at the top right of the webpage
+        action: click
+      - command: hover-text
+        text: Register
+        description: register link below the login form
+        action: click
